@@ -86,6 +86,7 @@ section {
     padding-top: 1.5rem;
     border-top: 1px solid rgba(0, 0, 0, 0.171);
     text-align: center;
+    display: none;
 }
 
 .header #menu {
@@ -145,8 +146,22 @@ section {
         padding: 2rem;
     }
 
+    .header nav.active {
+        display: block;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        transition: .5s all;
+    }
+
+    .header nav .copy-right {
+        display: block;
+    }
+
     .header #menu {
         display: inline-block;
+    }
+
+    .header #menu.fa-times {
+        transform: rotate(180deg);
     }
 
     .header nav {
@@ -157,6 +172,8 @@ section {
         right: 0;
         background: rgb(248, 229, 193);
         border-top: 1px solid rgba(146, 146, 146, 0.308);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        transition: .5s all;
     }
 
     .header nav a {
