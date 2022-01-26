@@ -95,41 +95,71 @@ section {
 }
 
 .introduction {
-    display: flex;
+    /* display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 2rem;
+    gap: 2rem; */
 }
 
-.introduction .image {
-    flex: 1 1 41rem;
-    text-align: center
+.heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5rem 0;
+    position: relative;
 }
 
-.introduction .image img {
-    height: 50rem;
-}
-
-.introduction .content {
-    flex: 1 1 51rem;
-    padding: 0 1rem;
-}
-
-.introduction .content h3 {
+.heading h1 {
     font-size: 10rem;
     font-family: 'Waterfall';
-    margin-bottom: 3rem;
     color: rgb(119, 96, 61);
     text-shadow: 2px 2px 2px #e0e0e0;
     text-align: center;
+    font-weight: bold;
 }
 
-.introduction .content p {
-    font-size: 2.5rem;
-    color: rgba(173, 143, 97, 0.76);
-    line-height: 1.5;
+.heading hr {
+    background-color: rgb(119, 96, 61);
+    flex: 1;
+    margin-top: 2.5rem;
 }
+
+.introduction .grid {
+    flex: 1 1 41rem;
+    text-align: center;
+    margin: 0 15rem;
+}
+
+.short-note .content {
+    margin-bottom: 2rem;
+}
+
+.short-note .content h2 {
+    font-size: 2.5rem;
+    color: rgba(105, 66, 8, 0.822);
+    line-height: 1.5;
+    font-weight: normal;
+}
+
+.grid {
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+}
+
+.grid-col {
+    flex: 1;
+}
+
+.grid-item {
+    margin-top: 2rem;
+}
+
+.grid-item img {
+    width: 100%;
+}
+
 
 
 
@@ -189,6 +219,24 @@ section {
     .header nav a:after {
         content: "";
         background: none;
+    }
+
+    .heading {
+        margin: 2rem;
+        margin-top: 0;
+    }
+
+    .heading h1 {
+        font-size: 8rem;
+    }
+
+    .grid {
+        gap: 1rem;
+        margin: 0 !important;
+    }
+
+    .introduction .grid .grid-item {
+        margin-top: 1rem;
     }
 }
 
