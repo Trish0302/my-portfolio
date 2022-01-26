@@ -204,6 +204,7 @@ section {
         border-top: 1px solid rgba(146, 146, 146, 0.308);
         clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
         transition: .5s all;
+        z-index: 1000;
     }
 
     .header nav a {
