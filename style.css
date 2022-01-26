@@ -20,7 +20,8 @@ section {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: rgba(245, 222, 179, 0.644);
+    background: rgb(248, 229, 193);
+    position: relative;
 }
 
 .header .avatar {
@@ -46,8 +47,15 @@ section {
     position: relative;
 }
 
+.header nav a i {
+    font-size: 1.5rem;
+    margin-right: 2rem;
+    color: rgb(104, 75, 75);
+    display: none;
+}
+
 .header nav a:hover {
-    color:rgb(116, 67, 7);
+    color: rgb(116, 67, 7);
 }
 
 .header nav a:after {
@@ -68,6 +76,20 @@ section {
 .header nav a:hover:after {
     transform: scaleX(1.5);
     transform-origin: bottom right;
+}
+
+.header nav .copy-right {
+    font-size: 2.5rem;
+    color: rgb(145, 115, 76);
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.171);
+    text-align: center;
+}
+
+.header #menu {
+    font-size: 2rem;
+    display: none;
 }
 
 .introduction {
@@ -102,11 +124,12 @@ section {
 }
 
 .introduction .content p {
-    font-size: 2.5rem;   
+    font-size: 2.5rem;
     color: rgba(173, 143, 97, 0.76);
     line-height: 1.5;
-    /* background: #e0e0e052; */
 }
+
+
 
 
 
@@ -121,8 +144,34 @@ section {
         padding: 2rem;
     }
 
-    nav {
-        display: none !important;
+    .header #menu {
+        display: inline-block;
+    }
+
+    .header nav {
+        position: absolute;
+        display: block;
+        top: 100%;
+        left: 0;
+        right: 0;
+        height: calc(100vh - 85.85px);
+        background: rgb(248, 229, 193);
+        border-top: 1px solid rgba(146, 146, 146, 0.308);
+    }
+
+    .header nav a {
+        display: block;
+        width: auto;
+        margin: 2.5rem 3rem;
+    }
+
+    .header nav a i {
+        display: inline-block;
+    }
+
+    .header nav a:after {
+        content: "";
+        background: none;
     }
 }
 
