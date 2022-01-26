@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Waterfall&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Markazi+Text&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Markazi Text', cursive;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+section {
+    padding: 1rem 5rem;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(245, 222, 179, 0.644);
+}
+
+.header .avatar {
+    font-family: 'Waterfall';
+    font-size: 5rem;
+}
+
+.header .avatar img {
+    width: 7rem;
+    border-radius: 50%;
+    height: 7rem;
+    object-fit: cover;
+}
+
+.header nav {
+    display: flex;
+}
+
+.header nav a {
+    font-size: 3rem;
+    color: rgb(145, 115, 76);
+    margin-left: 4rem;
+    position: relative;
+}
+
+.header nav a:hover {
+    color:rgb(116, 67, 7);
+}
+
+.header nav a:after {
+    transform: scaleX(0);
+    content: "";
+    position: absolute;
+    width: 70%;
+    height: 3rem;
+    bottom: -1.7rem;
+    right: 0;
+    background: url('images/underline.png');
+    z-index: 2000;
+    background-size: cover;
+    background-position: center;
+    transition: .25s ease-out;
+}
+
+.header nav a:hover:after {
+    transform: scaleX(1.5);
+    transform-origin: bottom right;
+}
+
+.introduction {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.introduction .image {
+    flex: 1 1 41rem;
+    text-align: center
+}
+
+.introduction .image img {
+    height: 50rem;
+}
+
+.introduction .content {
+    flex: 1 1 51rem;
+    padding: 0 1rem;
+}
+
+.introduction .content h3 {
+    font-size: 10rem;
+    font-family: 'Waterfall';
+    margin-bottom: 3rem;
+    color: rgb(119, 96, 61);
+    text-shadow: 2px 2px 2px #e0e0e0;
+    text-align: center;
+}
+
+.introduction .content p {
+    font-size: 2.5rem;   
+    color: rgba(173, 143, 97, 0.76);
+    line-height: 1.5;
+    /* background: #e0e0e052; */
+}
+
+
+
+
+
+@media (max-width: 791px) {
+    html {
+        font-size: 50%;
+    }
+
+    section {
+        padding: 2rem;
+    }
+
+    nav {
+        display: none !important;
+    }
+}
+
+@media (max-width: 940px) {
+    html {
+        font-size: 55%;
+    }
+}
