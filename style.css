@@ -275,6 +275,16 @@ section {
     font-size: 1.5rem;
     margin-right: 1rem;
     color: #794800;
+    display: inline-block;
+    width: .8rem;
+}
+
+.footer .box-container .box:nth-child(2) a i {
+    width: 1.8rem;
+}
+
+.footer .box-container .box:last-child a i {
+    width: 1rem;
 }
 
 .footer .box-container .box a:hover {
