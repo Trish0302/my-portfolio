@@ -26,6 +26,7 @@ section {
     margin-bottom: .5rem;
     display: inline-block;
     font-size: 2rem;
+    box-shadow: .2rem .2rem .4rem rgba(126, 126, 126, 0.2);
     transition: .3s linear;
 }
 
@@ -185,15 +186,17 @@ section {
     justify-content: center;
     align-items: flex-start;
     flex-wrap: wrap;
+    gap: 3rem;
 }
 
 .contents .content .box-container .box {
     flex: 1 1 25rem;
     padding: 2rem;
-    margin: 1rem;
     background-color: #b66d00;
     position: relative;
     text-align: right;
+    box-shadow: .5rem .5rem .4rem rgba(0, 0, 0, 0.2);
+    margin-bottom: 2rem;
 }
 
 .contents .content .box-container h3 {
@@ -209,13 +212,13 @@ section {
 .contents .content .box-container i {
     position: absolute;
     top: .5rem;
-    right: .5rem;
+    right: .7rem;
     display: inline-block;
     width: 4rem;
     height: 4rem;
     font-size: 1.8rem;
     color: #bd7100;
-    background-color: #ffffff;
+    background-color: white;
     margin-right: .7rem;
     margin-top: .7rem;
     border-radius: 50%;
@@ -230,7 +233,53 @@ section {
     text-align: left;
 }
 
+.footer {
+    background-color: rgba(250, 238, 216, 0.685);
+}
 
+.footer .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+.footer .box-container .box {
+    flex: 1 1 41rem;
+    display: flex;
+    flex-direction: column;
+    border-bottom: .1rem solid #91570069;
+    padding-bottom: .5rem;
+}
+
+.footer .box-container .box:last-child {
+    border: none;
+}
+
+.footer .box-container .box h3 {
+    font-size: 5.5rem;
+    font-weight: normal;
+    font-family: 'Waterfall';
+    margin-bottom: 2.5rem;
+    color: #794800;
+}
+
+.footer .box-container .box a {
+    font-size: 2.5rem;
+    color: #000000;
+    margin-bottom: 1.5rem;
+}
+
+.footer .box-container .box a i {
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    color: #794800;
+}
+
+.footer .box-container .box a:hover {
+    color: #794800;
+}
 
 
 
