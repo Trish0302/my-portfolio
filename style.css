@@ -5,6 +5,8 @@
     margin: 0;
     padding: 0;
     text-decoration: none;
+    outline: none;
+    border: none;
     font-family: 'Markazi Text', cursive;
 }
 
@@ -16,12 +18,32 @@ section {
     padding: 1rem 5rem;
 }
 
+.btn {
+    color: #b66d00;
+    background-color: white;
+    padding: 1rem 2rem;
+    margin-top: .8rem;
+    margin-bottom: .5rem;
+    display: inline-block;
+    font-size: 2rem;
+    transition: .3s linear;
+}
+
+.btn:hover {
+    background: #2c104650;
+    color: #ffffff;
+}
+
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background: rgb(248, 229, 193);
-    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
 }
 
 .header .avatar {
@@ -41,7 +63,7 @@ section {
 }
 
 .header nav a {
-    font-size: 3rem;
+    font-size: 2.5rem;
     color: rgb(145, 115, 76);
     margin-left: 4rem;
     position: relative;
@@ -100,6 +122,7 @@ section {
     justify-content: center;
     flex-wrap: wrap;
     gap: 2rem; */
+    padding-top: 78px;
 }
 
 .heading {
@@ -131,10 +154,6 @@ section {
     margin: 0 15rem;
 }
 
-.short-note .content {
-    margin-bottom: 2rem;
-}
-
 .short-note .content h2 {
     font-size: 2.5rem;
     color: rgba(105, 66, 8, 0.822);
@@ -160,6 +179,55 @@ section {
     width: 100%;
 }
 
+.contents .content .box-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.contents .content .box-container .box {
+    flex: 1 1 25rem;
+    padding: 2rem;
+    margin: 1rem;
+    background-color: #b66d00;
+    position: relative;
+    text-align: right;
+}
+
+.contents .content .box-container h3 {
+    font-size: 3rem;
+    font-weight: normal;
+    color: #ffffff;
+    text-shadow: .2rem 0 #07292e93;
+    margin-bottom: 1rem;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.contents .content .box-container i {
+    position: absolute;
+    top: .5rem;
+    right: .5rem;
+    display: inline-block;
+    width: 4rem;
+    height: 4rem;
+    font-size: 1.8rem;
+    color: #bd7100;
+    background-color: #ffffff;
+    margin-right: .7rem;
+    margin-top: .7rem;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 3.7rem;
+}
+
+.contents .content .box-container p {
+    font-size: 2rem;
+    line-height: 1.5;
+    color: #ffffff;
+    text-align: left;
+}
 
 
 
@@ -174,6 +242,10 @@ section {
 
     section {
         padding: 2rem;
+    }
+
+    .header {
+        padding: 1.5rem 2rem;
     }
 
     .header nav.active {
