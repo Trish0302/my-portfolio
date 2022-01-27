@@ -262,12 +262,12 @@ section {
     font-weight: normal;
     font-family: 'Waterfall';
     margin-bottom: 2.5rem;
-    color: #794800;
+    color: #492e06;
 }
 
 .footer .box-container .box a {
     font-size: 2.5rem;
-    color: #000000;
+    color: #794800;
     margin-bottom: 1.5rem;
 }
 
@@ -278,8 +278,15 @@ section {
 }
 
 .footer .box-container .box a:hover {
-    color: #794800;
+    color: #bd7100;
 }
+
+
+
+
+
+
+
 
 
 
