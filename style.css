@@ -190,7 +190,7 @@ section {
 }
 
 .contents .content .box-container .box {
-    flex: 1 1 25rem;
+    flex: 1 1 35rem;
     padding: 2rem;
     background-color: #b66d00;
     position: relative;
@@ -200,7 +200,7 @@ section {
 }
 
 .contents .content .box-container h3 {
-    font-size: 3rem;
+    font-size: 3.5rem;
     font-weight: normal;
     color: #ffffff;
     text-shadow: .2rem 0 #07292e93;
@@ -227,7 +227,7 @@ section {
 }
 
 .contents .content .box-container p {
-    font-size: 2rem;
+    font-size: 2.3rem;
     line-height: 1.5;
     color: #ffffff;
     text-align: left;
@@ -269,6 +269,8 @@ section {
     font-size: 2.5rem;
     color: #794800;
     margin-bottom: 1.5rem;
+    display: inline-block;
+    width: auto;
 }
 
 .footer .box-container .box a i {
