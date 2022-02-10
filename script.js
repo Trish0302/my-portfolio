@@ -8,8 +8,7 @@ menu.onclick = function () {
     copyRight.classList.toggle('active');
 }
 
-$(document).ready(function() {
-    console.log('dsd hello');
+$(document).ready(function () {
     $('.grid').colcade({
         columns: '.grid-col',
         items: '.grid-item'

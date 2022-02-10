@@ -45,7 +45,7 @@ section {
     left: 0;
     right: 0;
     z-index: 1000;
-    box-shadow: .1rem .1rem .3rem rgba(56, 38, 3, 0.13);
+    box-shadow: .2rem .2rem 1rem rgba(56, 38, 3, 0.13);
 }
 
 .header .avatar {
@@ -98,6 +98,22 @@ section {
 }
 
 .header nav a:hover:after {
+    transform: scaleX(1.5);
+    transform-origin: bottom right;
+}
+
+.header nav a.active::after {
+    transform: scaleX(0);
+    content: "";
+    position: absolute;
+    width: 70%;
+    height: 3rem;
+    bottom: -1.7rem;
+    right: 0;
+    background: url('images/underline.png');
+    z-index: 2000;
+    background-size: cover;
+    background-position: center;
     transform: scaleX(1.5);
     transform-origin: bottom right;
 }
@@ -188,6 +204,7 @@ section {
     align-items: flex-start;
     flex-wrap: wrap;
     gap: 3rem;
+    margin-bottom: 4rem;
 }
 
 .contents .content .box-container .box {
@@ -198,6 +215,7 @@ section {
     text-align: right;
     box-shadow: .5rem .5rem .4rem rgba(0, 0, 0, 0.2);
     margin-bottom: 2rem;
+    border-radius: .5rem;
 }
 
 .contents .content .box-container h3 {
@@ -386,5 +404,9 @@ section {
 @media (max-width: 940px) {
     html {
         font-size: 55%;
+    }
+
+    .header nav a {
+        margin-left: 2.5rem;
     }
 }
