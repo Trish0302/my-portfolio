@@ -8,6 +8,24 @@ menu.onclick = function () {
     copyRight.classList.toggle('active');
 }
 
+window.addEventListener('scroll', reveal);
+
+function reveal() {
+    let reveals = document.querySelectorAll('.reveal');
+
+    reveals.forEach(reveal => {
+        let windowHeight = window.innerHeight;
+        let revealTop = reveal.getBoundingClientRect().top;
+        let reviewPoint = 150;
+
+        if (revealTop < windowHeight - reviewPoint) {
+            reveal.classList.add('reveal-style');
+        } else {
+            reveal.classList.remove('reveal-style');
+        }
+    });
+}
+
 $(document).ready(function () {
     $('.grid').colcade({
         columns: '.grid-col',
