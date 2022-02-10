@@ -323,6 +323,9 @@ section {
 
 
 
+
+
+
 @media (max-width: 791px) {
     html {
         font-size: 50%;
@@ -378,6 +381,11 @@ section {
     }
 
     .header nav a:after {
+        content: "";
+        background: none;
+    }
+
+    .header nav a.active::after {
         content: "";
         background: none;
     }
