@@ -324,6 +324,23 @@ section {
     color: #bd7100;
 }
 
+.update-message-modal {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 10000;
+    padding: 2rem 4rem;
+    font-size: 2rem;
+    background-color: #e0e0e0;
+    margin: 1rem;
+    box-shadow: .2rem .2rem .4rem #b66d001e;
+}
+
+.update-message-modal.hide {
+    opacity: 0;
+    transition: .7s linear;
+}
+
 
 
 
@@ -419,6 +436,14 @@ section {
     .introduction .grid .grid-item {
         margin-top: 1rem;
     }
+
+    
+.update-message-modal {
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    margin: 1rem;
+    box-shadow: .2rem .2rem .4rem #b66d001e;
+}
 }
 
 @media (max-width: 940px) {
