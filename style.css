@@ -436,14 +436,6 @@ section {
     .introduction .grid .grid-item {
         margin-top: 1rem;
     }
-
-    
-.update-message-modal {
-    padding: 1rem 2rem;
-    font-size: 1.5rem;
-    margin: 1rem;
-    box-shadow: .2rem .2rem .4rem #b66d001e;
-}
 }
 
 @media (max-width: 940px) {
