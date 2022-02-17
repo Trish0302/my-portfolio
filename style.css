@@ -174,13 +174,6 @@ section {
     font-weight: bold;
 }
 
-.heading hr {
-    height: 5rem;
-    background-color: rgba(0, 0, 0, 0.137);
-    flex: 1;
-    margin-top: 5rem;
-}
-
 .heading span {
     position: absolute;
     top: 36%;
@@ -477,6 +470,6 @@ section {
 
 @media (max-width: 450px) {
     .heading span {
-        font-size: 4rem;
+        font-size: 4.5rem;
     }
 }
