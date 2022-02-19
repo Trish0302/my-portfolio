@@ -301,7 +301,7 @@ section {
 }
 
 .footer .box-container .box .flex a {
-    width: 14rem;
+    width: 15rem;
 }
 
 .footer .box-container .box:last-child {
@@ -474,5 +474,9 @@ section {
 @media (max-width: 450px) {
     .heading span {
         font-size: 4.5rem;
+    }
+
+    .footer .box-container .box .flex a {
+        width: 13rem;
     }
 }
