@@ -197,9 +197,9 @@ section {
 }
 
 .introduction .grid {
-    flex: 1 1 41rem;
+    flex: 1 1 50rem;
     text-align: center;
-    margin: 0 15rem;
+    margin: 0 10rem;
 }   
 
 .short-note .content h2 {
@@ -289,16 +289,19 @@ section {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: flex-start;
+    /* align-items: flex-end; */
     gap: 2rem;
 }
 
 .footer .box-container .box {
     flex: 1 1 41rem;
-    display: flex;
-    flex-direction: column;
+    display: grid;
     border-bottom: .1rem solid #91570069;
     padding-bottom: .5rem;
+}
+
+.footer .box-container .box .flex a {
+    width: 14rem;
 }
 
 .footer .box-container .box:last-child {
