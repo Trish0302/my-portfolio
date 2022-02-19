@@ -300,8 +300,13 @@ section {
     padding-bottom: .5rem;
 }
 
+
+.footer .box-container .box .flex {
+    /* display: grid; */
+}
+
 .footer .box-container .box .flex a {
-    width: 15rem;
+    width: 33%;
 }
 
 .footer .box-container .box:last-child {
