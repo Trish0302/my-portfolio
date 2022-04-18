@@ -481,4 +481,8 @@ section {
     .footer .box-container .box .flex a {
         width: 13rem;
     }
+
+    .am-an-content iframe {
+        margin-bottom: 1rem;
+    }
 }
