@@ -349,24 +349,17 @@ section {
     color: #bd7100;
 }
 
-.update-message-modal {
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    z-index: 10000;
-    padding: 2rem 4rem;
-    font-size: 2rem;
-    background-color: #e0e0e0;
-    margin: 1rem;
-    box-shadow: .2rem .2rem .4rem #b66d001e;
+.am-an-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-bottom: 3.5rem;
 }
 
-.update-message-modal.hide {
-    opacity: 0;
-    transition: .7s linear;
+.am-an-content iframe {
+    flex: 1 1 .5rem;
+    margin-bottom: .5rem;
 }
-
-
 
 
 
@@ -456,6 +449,11 @@ section {
     .heading {
         margin: 2rem;
     }
+
+    /* 
+        ôi con gà rừng nào gáy đâu đây
+        em nghe lòng mình niềm vui đong đầy 
+     */
 
     .heading h1 {
         font-size: 8rem;

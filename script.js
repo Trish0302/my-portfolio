@@ -32,7 +32,3 @@ $(document).ready(function () {
         items: '.grid-item'
     })
 })
-
-setTimeout(function() {
-    document.querySelector('.update-message-modal').classList.add('hide');
-},4000);
