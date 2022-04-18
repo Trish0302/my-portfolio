@@ -200,7 +200,7 @@ section {
     flex: 1 1 50rem;
     text-align: center;
     margin: 0 10rem;
-}   
+}
 
 .short-note .content h2 {
     font-size: 2.5rem;
@@ -293,7 +293,7 @@ section {
 
 .footer .box-container .box {
     flex: 1 1 45rem;
-    display : flex;
+    display: flex;
     flex-direction: column;
     border-bottom: .1rem solid #91570069;
     padding-bottom: .5rem;
@@ -455,7 +455,6 @@ section {
 
     .heading {
         margin: 2rem;
-        margin-top: 0;
     }
 
     .heading h1 {
